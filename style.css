@@ -1,1 +1,127 @@
+*{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-color: hsl(240, 78%, 98%);
+}
+header{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  color: hsl(233, 13%, 49%);
+}
+.header{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  color: hsl(234, 14%, 74%);
+  font-size: 15px;
+}
+.toggle{
+  width:50px;
+  background-image: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+}
+.toggle.active{
+  justify-content: start;
+}
+small{
+  width:23px;
+  height: 23px;
+  background-color: white;
+  border-radius: 50%;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  color: hsl(233, 13%, 49%);
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 5px 5px 25px hsl(234, 14%, 74%);
+}
+.left{
+  border-radius: 10px 0 0 10px;
+}
+.right{
+  border-radius: 0 10px 10px 0;
+}
+.center{
+  background-image: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  padding: 60px 40px;
+}
+h2{
+  font-size: 18px;
+}
+h3{
+  font-size: 60px;
+  color: hsl(232, 13%, 33%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+span{
+  font-size: 40px;
+}
+.center h3{
+  color: white;
+}
+hr{
+  width: 100%;
+  height: 1px;
+  background-color: hsl(236, 26%, 88%);
+  border: 0
+}
+.center hr{
+  background-color: white;
+}
+button{
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  align-self: stretch;
+  cursor: pointer;
+}
+.center button{
+  background-image: linear-gradient(to right, hsl(0, 0%, 100%), hsl(0, 0%, 100%));
+  color: hsl(237, 63%, 64%);
+}
 
+.month{
+  display: none;
+}
+.month.active{
+  display: flex;
+}
+.annual{
+  display: none;
+}
+.annual.active{
+  display: flex;
+}
